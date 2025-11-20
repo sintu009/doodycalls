@@ -67,19 +67,19 @@ export default function Header() {
                 }`}
               >
                 <a
-                  href="/products-overview/masterCheif"
+                  href="/products-overview#masterchief"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                 >
                   The Master Chief
                 </a>
                 <a
-                  href="/products-overview/components/CommanderSection"
+                  href="/products-overview#commander"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                 >
                   The Commander
                 </a>
                 <a
-                  href="/products-overview/components/AdmiralSection"
+                  href="/products-overview#admiral"
                   className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                 >
                   The Admiral
@@ -154,22 +154,22 @@ export default function Header() {
                 {productsOpen && (
                   <div className="mt-2 flex flex-col space-y-2 pl-4">
                     <a
-                      href="/products/toilets"
+                      href="/products-overview#masterchief"
                       className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                     >
-                      Portable Toilets
+                      The Master Chief
                     </a>
                     <a
-                      href="/products/cleaning"
+                      href="/products-overview#commander"
                       className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                     >
-                      Cleaning Supplies
+                      The Commander
                     </a>
                     <a
-                      href="/products/accessories"
+                      href="/products-overview#admiral"
                       className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                     >
-                      Accessories
+                      The Admiral
                     </a>
                   </div>
                 )}
