@@ -1,13 +1,12 @@
-
-import { useEffect, useState } from 'react';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import WasteStationsSection from './components/WasteStationsSection';
-import WasteBagsSection from './components/WasteBagsSection';
-import AddOnsSection from './components/AddOnsSection';
-import EnvironmentalSection from './components/EnvironmentalSection';
-import CTASection from './components/CTASection';
-import Footer from './components/Footer';
+import { useEffect, useState } from "react";
+import Header from "../../../components/Header";
+import HeroSection from "./components/HeroSection";
+import WasteStationsSection from "./components/WasteStationsSection";
+import WasteBagsSection from "./components/WasteBagsSection";
+import AddOnsSection from "./components/AddOnsSection";
+import EnvironmentalSection from "./components/EnvironmentalSection";
+import CTASection from "./components/CTASection";
+import Footer from "./components/Footer";
 
 export default function Products() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
@@ -17,9 +16,9 @@ export default function Products() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(prev => ({
+            setIsVisible((prev) => ({
               ...prev,
-              [entry.target.id]: true
+              [entry.target.id]: true,
             }));
           }
         });
@@ -27,7 +26,7 @@ export default function Products() {
       { threshold: 0.1 }
     );
 
-    const sections = document.querySelectorAll('[data-animate]');
+    const sections = document.querySelectorAll("[data-animate]");
     sections.forEach((section) => observer.observe(section));
 
     return () => observer.disconnect();
