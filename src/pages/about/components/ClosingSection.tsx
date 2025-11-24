@@ -18,7 +18,9 @@ export default function ClosingSection({ isVisible }: ClosingSectionProps) {
               A well-kept community says, "We care about each other, our planet, and our future." DoodyCalls makes that message visible — in every clean walkway, every maintained station, and every proud resident.
             </p>
           </div>
-          <button className="bg-[#F28C28] text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#e07a1f] transform hover:scale-105 transition-all duration-300 shadow-xl whitespace-nowrap cursor-pointer">
+          <button
+            className="bg-[#F28C28] text-white px-6 py-3 md:px-8 md:py-4 rounded-full text-base md:text-lg font-semibold hover:bg-[#e07a1f] transform hover:scale-105 transition-all duration-300 shadow-xl whitespace-nowrap cursor-pointer w-full sm:w-auto"
+          >
             Start Your Community's Clean Future Today
           </button>
         </div>

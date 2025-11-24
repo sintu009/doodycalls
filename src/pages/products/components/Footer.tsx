@@ -62,14 +62,9 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-600 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm">
-            © 2024 DoodyCalls of Wake County. All rights reserved.
+            © 2025 DoodyCalls of Wake County. All rights reserved.
           </p>
-          <a 
-            href="https://readdy.ai/?origin=logo" 
-            className="text-gray-300 hover:text-white text-sm transition-colors duration-200 cursor-pointer mt-4 md:mt-0"
-          >
-            Website Builder
-          </a>
+           
         </div>
       </div>
     </footer>

@@ -33,7 +33,7 @@ export default function Footer() {
               <li><a href="/products" className="text-gray-300 hover:text-[#F28C28] transition-colors cursor-pointer">Waste Stations</a></li>
               <li><a href="/dog-waste-bags" className="text-gray-300 hover:text-[#F28C28] transition-colors cursor-pointer">Waste Bags</a></li>
               <li><a href="/trash-cans" className="text-gray-300 hover:text-[#F28C28] transition-colors cursor-pointer">Trash Cans</a></li>
-              <li><a href="/educational-signs" className="text-gray-300 hover:text-[#F28C28] transition-colors cursor-pointer">Educational Signs</a></li>
+              <li><a href="/educational-signs" className="text-gray-300 hover:text-[#F28C28] transition-colors cursor-pointer">Customer Signs</a></li>
             </ul>
           </div>
 
@@ -56,7 +56,7 @@ export default function Footer() {
             <div className="flex items-center space-x-6">
               <a href="#" className="text-gray-400 hover:text-[#F28C28] text-sm transition-colors cursor-pointer">Privacy Policy</a>
               <a href="#" className="text-gray-400 hover:text-[#F28C28] text-sm transition-colors cursor-pointer">Terms of Service</a>
-              <a href="https://readdy.ai/?origin=logo" className="text-gray-400 hover:text-[#F28C28] text-sm transition-colors cursor-pointer">Website Builder</a>
+              
             </div>
           </div>
         </div>

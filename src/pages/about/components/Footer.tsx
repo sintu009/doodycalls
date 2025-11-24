@@ -52,18 +52,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm opacity-75 mb-4 md:mb-0">
-            © 2024 DoodyCalls of Wake County. All rights reserved.
-          </p>
-          <a 
-            href="https://readdy.ai/?origin=logo" 
-            className="text-sm opacity-75 hover:opacity-100 transition-opacity duration-200 cursor-pointer"
-          >
-            Website Builder
-          </a>
-        </div>
+         
       </div>
     </footer>
   );

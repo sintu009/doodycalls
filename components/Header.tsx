@@ -1,24 +1,29 @@
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/logo_doody_calls.webp";
+import GetQuoteModal from "./GetQuoteModal";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const navigate = useNavigate();
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <div className="flex items-center">
-            <div
-              className="text-2xl font-bold text-[#2E5A51] cursor-pointer"
-              style={{ fontFamily: "Pacifico, serif" }}
-              onClick={() => navigate("/")}
-            >
-              DoodyCalls
-            </div>
+    <>
+      <header className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex items-center justify-between h-20">
+            {/* Logo */}
+          <div className="flex items-center cursor-pointer" onClick={() => navigate("/")}>
+            {/* Logo Image */}
+            <img
+              src={logo}
+              alt="DoodyCalls Logo"
+              className="h-10 w-25 object-contain mr-2"
+            />
+ 
           </div>
 
           {/* Desktop Navigation */}
@@ -87,13 +92,16 @@ export default function Header() {
               </div>
             </div>
 
-            <a
+            {/* <a
               href="/about"
               className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
             >
               About
-            </a>
-            <button className="bg-[#F28C28] text-white px-6 py-2 rounded-full hover:bg-[#e07a1f] transition-colors whitespace-nowrap cursor-pointer">
+            </a> */}
+            <button
+              onClick={() => setIsQuoteOpen(true)}
+              className="bg-[#F28C28] text-white px-6 py-2 rounded-full hover:bg-[#e07a1f] transition-colors whitespace-nowrap cursor-pointer"
+            >
               Get Quote
             </button>
           </nav>
@@ -175,19 +183,24 @@ export default function Header() {
                 )}
               </div>
 
-              <a
+              {/* <a
                 href="/about"
                 className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
               >
                 About
-              </a>
-              <button className="bg-[#F28C28] text-white px-6 py-2 rounded-full hover:bg-[#e07a1f] transition-colors w-fit whitespace-nowrap cursor-pointer">
+              </a> */}
+              <button
+                onClick={() => setIsQuoteOpen(true)}
+                className="bg-[#F28C28] text-white px-6 py-2 rounded-full hover:bg-[#e07a1f] transition-colors w-fit whitespace-nowrap cursor-pointer"
+              >
                 Get Quote
               </button>
             </nav>
           </div>
         )}
       </div>
-    </header>
+      </header>
+      <GetQuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
+    </>
   );
 }

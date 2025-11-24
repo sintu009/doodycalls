@@ -73,7 +73,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="/educational-signs" className="text-gray-300 hover:text-white transition-colors cursor-pointer">
-                  Educational Signs
+                  Customer Signs
                 </a>
               </li>
               <li>
@@ -111,7 +111,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-300 text-sm">
-            © 2024 DoodyCalls of Wake County. All rights reserved.
+            © 2025 DoodyCalls of Wake County. All rights reserved.
           </p>
           <div className="flex items-center space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors cursor-pointer">
@@ -120,9 +120,7 @@ export default function Footer() {
             <a href="#" className="text-gray-300 hover:text-white text-sm transition-colors cursor-pointer">
               Terms of Service
             </a>
-            <a href="https://readdy.ai/?origin=logo" className="text-gray-300 hover:text-white text-sm transition-colors cursor-pointer">
-              Website Builder
-            </a>
+            
           </div>
         </div>
       </div>

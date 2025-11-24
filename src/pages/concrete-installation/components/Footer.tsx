@@ -68,9 +68,7 @@ export default function Footer() {
             <a href="/terms" className="text-gray-400 hover:text-[#F28C28] text-sm transition-colors duration-300 cursor-pointer">
               Terms of Service
             </a>
-            <a href="https://readdy.ai/?origin=logo" className="text-gray-400 hover:text-[#F28C28] text-sm transition-colors duration-300 cursor-pointer">
-              Website Builder
-            </a>
+            
           </div>
         </div>
       </div>

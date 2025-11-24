@@ -28,7 +28,9 @@ export default function About() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
-      <main></main>
+      <main>
+        
+      </main>
       <Footer />
     </div>
   );
