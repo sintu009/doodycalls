@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import SmartFeaturesSection from './components/SmartFeaturesSection';
-import MasterChiefSection from './components/MasterChiefSection';
-import CommanderSection from './components/CommanderSection';
-import AdmiralSection from './components/AdmiralSection';
-import SolarLightSection from './components/SolarLightSection';
-import EnvironmentalSection from './components/EnvironmentalSection';
-import ContactSection from './components/ContactSection';
-import Footer from './components/Footer';
+import { useEffect, useState } from "react";
+import HeroSection from "./components/HeroSection";
+import SmartFeaturesSection from "./components/SmartFeaturesSection";
+import MasterChiefSection from "./components/MasterChiefSection";
+import CommanderSection from "./components/CommanderSection";
+import AdmiralSection from "./components/AdmiralSection";
+import SolarLightSection from "./components/SolarLightSection";
+import EnvironmentalSection from "./components/EnvironmentalSection";
+import ContactSection from "./components/ContactSection";
+import Footer from "../../../components/Footer";
+import Header from "../../../components/Header";
 
 export default function ProductsOverview() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
@@ -18,9 +18,9 @@ export default function ProductsOverview() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(prev => ({
+            setIsVisible((prev) => ({
               ...prev,
-              [entry.target.id]: true
+              [entry.target.id]: true,
             }));
           }
         });
@@ -28,7 +28,7 @@ export default function ProductsOverview() {
       { threshold: 0.1 }
     );
 
-    const sections = document.querySelectorAll('[data-animate]');
+    const sections = document.querySelectorAll("[data-animate]");
     sections.forEach((section) => observer.observe(section));
 
     return () => observer.disconnect();
@@ -43,7 +43,7 @@ export default function ProductsOverview() {
         <MasterChiefSection isVisible={isVisible.masterchief} />
         <CommanderSection isVisible={isVisible.commander} />
         <AdmiralSection isVisible={isVisible.admiral} />
-        <SolarLightSection isVisible={isVisible['solar-light']} />
+        <SolarLightSection isVisible={isVisible["solar-light"]} />
         <EnvironmentalSection isVisible={isVisible.environmental} />
         <ContactSection isVisible={isVisible.contact} />
       </main>

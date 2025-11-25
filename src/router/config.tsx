@@ -17,6 +17,7 @@ import DogWasteBags from "../pages/dog-waste-bags/page";
 import TrashCans from "../pages/trash-cans/page";
 
 import ConcreteInstallationPage from "../pages/concrete-installation/page";
+import DogWasteStationInstallationPage from "../pages/dog-waste-station-installation";
 
 const routes: RouteObject[] = [
   {
@@ -54,6 +55,10 @@ const routes: RouteObject[] = [
   {
     path: "/dog-station-services",
     element: <DogStationServicesPage />,
+  },
+  {
+    path: "/dog-waste-station-installation", // alias for legacy link
+    element: <DogWasteStationInstallationPage />,
   },
   {
     path: "/dog-waste-bags",

@@ -61,9 +61,8 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-4xl mx-auto leading-relaxed font-medium">
-            We maintain and manage your dog waste stations so your property
-            stays fresh, functional, and welcoming for all residents and their
-            pets.
+            We maintain and manage your dog waste station so your property stays
+            fresh, functional, and welcoming for all residents and their pets.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
@@ -87,7 +86,7 @@ export default function HeroSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
               <div className="group">
                 <div className="text-4xl font-bold text-[#F28C28] mb-2 group-hover:scale-110 transition-transform duration-300">
-                  100+
+                  528+
                 </div>
                 <div className="text-[#2E5A51] font-semibold text-lg">
                   Stations Serviced
@@ -95,7 +94,7 @@ export default function HeroSection() {
               </div>
               <div className="group">
                 <div className="text-4xl font-bold text-[#F28C28] mb-2 group-hover:scale-110 transition-transform duration-300">
-                  30+
+                  140+
                 </div>
                 <div className="text-[#2E5A51] font-semibold text-lg">
                   Communities Served

@@ -1,6 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+
+import logo from "../assets/logo_doody_white_calls.webp";
 
 export default function Footer() {
+  const navigate = useNavigate();
+
   return (
     <footer className="bg-[#2E5A51] text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
@@ -10,7 +15,11 @@ export default function Footer() {
               className="text-2xl font-bold mb-6"
               style={{ fontFamily: '"Pacifico", serif' }}
             >
-              DoodyCalls of Wake County
+              <img
+                src={logo}
+                alt="DoodyCalls logo"
+                className="h-12 object-contain"
+              />
             </h3>
             <p className="text-lg opacity-90 leading-relaxed">
               Professional pet waste management services for communities across
@@ -67,18 +76,20 @@ export default function Footer() {
           </p>
 
           <nav className="flex space-x-4" aria-label="Footer navigation">
-            <a
-              href="/privacy-policy"
+            <button
+              type="button"
+              onClick={() => navigate("/privacyPolicy")}
               className="text-sm opacity-75 hover:underline"
             >
               Privacy Policy
-            </a>
-            <a
-              href="/terms-and-conditions"
+            </button>
+            <button
+              type="button"
+              onClick={() => navigate("/termcondition")}
               className="text-sm opacity-75 hover:underline"
             >
               Terms &amp; Conditions
-            </a>
+            </button>
           </nav>
         </div>
       </div>

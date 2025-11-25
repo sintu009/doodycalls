@@ -6,6 +6,7 @@ import GetQuoteModal from "./GetQuoteModal";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
   const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -35,12 +36,69 @@ export default function Header() {
               >
                 Home
               </a>
-              <a
-                href="/services"
-                className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
+
+              {/* Services with hover dropdown (desktop) */}
+              <div
+                className="relative"
+                onMouseEnter={() => setServicesOpen(true)}
+                onMouseLeave={() => setServicesOpen(false)}
               >
-                Services
-              </a>
+                <a
+                  href="/services"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate("/services");
+                  }}
+                  className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer flex items-center space-x-2"
+                  aria-expanded={servicesOpen}
+                  aria-haspopup="true"
+                >
+                  <span>Services</span>
+                  <i
+                    className={`ri-arrow-down-s-line transition-transform ${
+                      servicesOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </a>
+
+                {/* Desktop Services dropdown */}
+                <div
+                  className={`absolute left-0 mt-2 w-56 bg-white border border-gray-200 rounded-md shadow-lg overflow-hidden transition-opacity duration-150 ${
+                    servicesOpen ? "opacity-100 visible" : "opacity-0 invisible"
+                  }`}
+                >
+                  <a
+                    href="/concrete-installation"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate("/concrete-installation");
+                    }}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    Concrete Installation
+                  </a>
+                  <a
+                    href="/dog-waste-station-installation"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate("/dog-waste-station-installation");
+                    }}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    Dog Waste Station Installation
+                  </a>
+                  <a
+                    href="/"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate("/");
+                    }}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    Repair ReInstallation
+                  </a>
+                </div>
+              </div>
 
               {/* Products with hover dropdown (desktop) */}
               <div
@@ -49,10 +107,10 @@ export default function Header() {
                 onMouseLeave={() => setProductsOpen(false)}
               >
                 <a
-                  href="/products"
+                  href="/products-overview"
                   onClick={(e) => {
                     e.preventDefault();
-                    navigate("/products");
+                    navigate("/products-overview");
                   }}
                   className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer flex items-center space-x-2"
                   aria-expanded={productsOpen}
@@ -73,25 +131,50 @@ export default function Header() {
                   }`}
                 >
                   <a
-                    href="/products-overview#masterchief"
+                    href="/educational-signs"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    The Master Chief
+                    Educational-signs
                   </a>
                   <a
-                    href="/products-overview#commander"
+                    href="/dog-waste-bags"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    The Commander
+                    Dog-waste-bags
+                  </a>
+                  <a
+                    href="/trash-cans"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    Trash-cans
                   </a>
                   <a
                     href="/products-overview#admiral"
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    The Admiral
+                    The Master Chief™
+                  </a>
+                  <a
+                    href="/products-overview#admiral"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    The Commander™
+                  </a>
+                  <a
+                    href="/products-overview#admiral"
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    The Admiral™
                   </a>
                 </div>
               </div>
+
+              <a
+                href="/"
+                className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
+              >
+                Blogs
+              </a>
 
               {/* <a
               href="/about"
@@ -112,7 +195,10 @@ export default function Header() {
               className="md:hidden p-2"
               onClick={() =>
                 setIsMenuOpen((prev) => {
-                  if (prev) setProductsOpen(false); // close products when closing menu
+                  if (prev) {
+                    setProductsOpen(false); // close products when closing menu
+                    setServicesOpen(false); // close services when closing menu
+                  }
                   return !prev;
                 })
               }
@@ -144,6 +230,57 @@ export default function Header() {
                 >
                   Services
                 </a>
+
+                {/* Mobile Services expandable */}
+                <div>
+                  <button
+                    className="w-full flex items-center justify-between text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
+                    onClick={() => setServicesOpen((p) => !p)}
+                    aria-expanded={servicesOpen}
+                  >
+                    <span>Services</span>
+                    <i
+                      className={`ri-arrow-down-s-line transition-transform ${
+                        servicesOpen ? "rotate-180" : ""
+                      }`}
+                    />
+                  </button>
+
+                  {servicesOpen && (
+                    <div className="mt-2 flex flex-col space-y-2 pl-4">
+                      <a
+                        href="/services/pet-waste-management"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          navigate("/services/pet-waste-management");
+                        }}
+                        className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
+                      >
+                        Pet Waste Management
+                      </a>
+                      <a
+                        href="/services/residential"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          navigate("/services/residential");
+                        }}
+                        className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
+                      >
+                        Residential Service
+                      </a>
+                      <a
+                        href="/services/commercial"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          navigate("/services/commercial");
+                        }}
+                        className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
+                      >
+                        Commercial Service
+                      </a>
+                    </div>
+                  )}
+                </div>
 
                 {/* Mobile Products expandable */}
                 <div>

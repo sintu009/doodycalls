@@ -19,7 +19,7 @@ export default function HeroSection({ isVisible }: HeroSectionProps) {
           }`}
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Because Clean Communities
+            Because Clean Communitiessss
             <br />
             <span className="text-[#F28C28]">Reflect Who We Are</span>
           </h1>

@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
-import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
-import ServicesSection from "./components/ServicesSection";
+import AboutServiceSection from "./components/AboutServiceSection";
+import ProcessSection from "./components/ProcessSection";
 import WhyChooseSection from "./components/WhyChooseSection";
-import QuoteSection from "./components/QuoteSection";
-import ContactSection from "./components/ContactSection";
+import CommunityBenefitsSection from "./components/CommunityBenefitsSection";
+import FinalCTASection from "./components/FinalCTASection";
 import Footer from "../../../components/Footer";
+import Header from "../../../components/Header";
 
-export default function DogStationServicesPage() {
+export default function DogWasteStationInstallationPage() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(
     new Set()
   );
@@ -36,10 +37,11 @@ export default function DogStationServicesPage() {
     <div className="min-h-screen bg-white">
       <Header />
       <HeroSection isVisible={isVisible("hero")} />
-      <ServicesSection isVisible={isVisible("services")} />
+      <AboutServiceSection isVisible={isVisible("about-service")} />
+      <ProcessSection isVisible={isVisible("process")} />
       <WhyChooseSection isVisible={isVisible("why-choose")} />
-      <QuoteSection isVisible={isVisible("quote")} />
-      <ContactSection isVisible={isVisible("contact")} />
+      <CommunityBenefitsSection isVisible={isVisible("community-benefits")} />
+      <FinalCTASection isVisible={isVisible("final-cta")} />
       <Footer />
     </div>
   );

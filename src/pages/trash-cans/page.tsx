@@ -1,12 +1,11 @@
-
-import { useEffect, useState } from 'react';
-import Header from './components/Header';
-import HeroSection from './components/HeroSection';
-import ProductOverview from './components/ProductOverview';
-import KeyFeatures from './components/KeyFeatures';
-import SummarySection from './components/SummarySection';
-import CTASection from './components/CTASection';
-import Footer from './components/Footer';
+import { useEffect, useState } from "react";
+import Header from "../../../components/Header";
+import HeroSection from "./components/HeroSection";
+import ProductOverview from "./components/ProductOverview";
+import KeyFeatures from "./components/KeyFeatures";
+import SummarySection from "./components/SummarySection";
+import CTASection from "./components/CTASection";
+import Footer from "../../../components/Footer";
 
 export default function TrashCans() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
@@ -16,9 +15,9 @@ export default function TrashCans() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            setIsVisible(prev => ({
+            setIsVisible((prev) => ({
               ...prev,
-              [entry.target.id]: true
+              [entry.target.id]: true,
             }));
           }
         });
@@ -26,7 +25,7 @@ export default function TrashCans() {
       { threshold: 0.1 }
     );
 
-    const sections = document.querySelectorAll('[data-animate]');
+    const sections = document.querySelectorAll("[data-animate]");
     sections.forEach((section) => observer.observe(section));
 
     return () => observer.disconnect();

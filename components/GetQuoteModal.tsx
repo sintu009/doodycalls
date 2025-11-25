@@ -5,10 +5,7 @@ interface GetQuoteModalProps {
   onClose: () => void;
 }
 
-const GetQuoteModal: React.FC<GetQuoteModalProps> = ({
-  isOpen,
-  onClose,
-}) => {
+const GetQuoteModal: React.FC<GetQuoteModalProps> = ({ isOpen, onClose }) => {
   const [form, setForm] = useState({
     name: "",
     contact: "",
@@ -24,51 +21,49 @@ const GetQuoteModal: React.FC<GetQuoteModalProps> = ({
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
 
-  const formData = new FormData();
-  formData.append("access_key", "1afa7310-14b9-4604-8b04-de5644d6682e");
+    const formData = new FormData();
+    formData.append("access_key", "86fd0121-ef18-42bc-8354-bc1bab08fb71");
 
-  // receiver email
-  formData.append("to_email", "sintugupta108@gmail.com");
+    // receiver email
+    formData.append("to_email", "greenwalksdc@gmail.com");
 
-  // optional sender info
-  formData.append("from_name", "DoodyCalls - Quote Request Form");
+    // optional sender info
+    formData.append("from_name", "DoodyCalls - Quote Request Form");
 
-  // user inputs
-  formData.append("name", form.name);
-  formData.append("contact", form.contact);
-  formData.append("email", form.email);
-  formData.append("message", form.message);
+    // user inputs
+    formData.append("name", form.name);
+    formData.append("contact", form.contact);
+    formData.append("email", form.email);
+    formData.append("message", form.message);
 
-  const response = await fetch("https://api.web3forms.com/submit", {
-    method: "POST",
-    body: formData,
-  });
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
 
-  const result = await response.json();
+    const result = await response.json();
 
-  if (result.success) {
-    setSuccessMsg("Your request has been submitted successfully! 🎉");
-    setForm({ name: "", contact: "", email: "", message: "" });
+    if (result.success) {
+      setSuccessMsg("Your request has been submitted successfully! 🎉");
+      setForm({ name: "", contact: "", email: "", message: "" });
 
-    setTimeout(() => {
-      setSuccessMsg("");
-      onClose();
-    }, 2000);
-  } else {
-    setSuccessMsg("Something went wrong. Please try again.");
-  }
-};
-
+      setTimeout(() => {
+        setSuccessMsg("");
+        onClose();
+      }, 2000);
+    } else {
+      setSuccessMsg("Something went wrong. Please try again.");
+    }
+  };
 
   if (!isOpen) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
-      <div className="w-full max-w-2xl bg-white shadow-2xl relative">
-        
+      <div className="w-full max-w-2xl bg-white shadow-2xl relative rounded-3xl">
         {/* Close Button */}
         <button
           className="absolute top-6 right-10 text-3xl text-gray-400 hover:text-gray-700 transition-colors"
