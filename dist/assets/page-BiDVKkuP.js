@@ -1,0 +1,2 @@
+import{r as n,j as e,H as i,F as a}from"./index-DLSkUCRt.js";function d(){return n.useEffect(()=>{const t=new IntersectionObserver(s=>{s.forEach(r=>{r.isIntersecting&&setIsVisible(o=>({...o,[r.target.id]:!0}))})},{threshold:.1});return document.querySelectorAll("[data-animate]").forEach(s=>t.observe(s)),()=>t.disconnect()},[]),e.jsxs("div",{className:"min-h-screen bg-white",children:[e.jsx(i,{}),e.jsx("main",{}),e.jsx(a,{})]})}export{d as default};
+//# sourceMappingURL=page-BiDVKkuP.js.map
