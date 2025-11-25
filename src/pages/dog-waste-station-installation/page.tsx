@@ -5,7 +5,7 @@ import ProcessSection from "./components/ProcessSection";
 import WhyChooseSection from "./components/WhyChooseSection";
 import CommunityBenefitsSection from "./components/CommunityBenefitsSection";
 import FinalCTASection from "./components/FinalCTASection";
-import Footer from "../../../components/footer";
+import Footer from "./components/Footer";
 import Header from "../../../components/Header";
 
 export default function DogWasteStationInstallationPage() {
