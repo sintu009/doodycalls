@@ -6,7 +6,7 @@ import WasteBagsSection from "./components/WasteBagsSection";
 import AddOnsSection from "./components/AddOnsSection";
 import EnvironmentalSection from "./components/EnvironmentalSection";
 import CTASection from "./components/CTASection";
-import Footer from "../../../components/Footer";
+import Footer from "../../../components/footer";
 
 export default function Products() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});

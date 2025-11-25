@@ -9,7 +9,7 @@ import GallerySection from "./components/GallerySection";
 import QuoteSection from "./components/QuoteSection";
 import ServiceAreaSection from "./components/ServiceAreaSection";
 import ContactSection from "./components/ContactSection";
-import Footer from "../../../components/Footer";
+import Footer from "../../../components/footer";
 import Header from "../../../components/Header";
 
 export default function ServicesPage() {

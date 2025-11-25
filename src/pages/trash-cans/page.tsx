@@ -5,7 +5,7 @@ import ProductOverview from "./components/ProductOverview";
 import KeyFeatures from "./components/KeyFeatures";
 import SummarySection from "./components/SummarySection";
 import CTASection from "./components/CTASection";
-import Footer from "../../../components/Footer";
+import Footer from "../../../components/footer";
 
 export default function TrashCans() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});

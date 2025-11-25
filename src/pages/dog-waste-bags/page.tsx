@@ -6,7 +6,7 @@ import ProductsSection from "./components/ProductsSection";
 import ComparisonSection from "./components/ComparisonSection";
 import DisclaimerSection from "./components/DisclaimerSection";
 import ContactSection from "./components/ContactSection";
-import Footer from "../../../components/Footer";
+import Footer from "../../../components/footer";
 
 export default function DogWasteBags() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});

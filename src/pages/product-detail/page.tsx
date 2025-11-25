@@ -7,7 +7,7 @@ import SmartDesign from "./components/SmartDesign";
 import TechnicalSpecs from "./components/TechnicalSpecs";
 import EnvironmentalPromise from "./components/EnvironmentalPromise";
 import CTASection from "./components/CTASection";
-import Footer from "../../../components/Footer";
+import Footer from "../../../components/footer";
 
 export default function ProductDetail() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});

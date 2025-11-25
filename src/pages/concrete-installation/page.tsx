@@ -7,7 +7,7 @@ import DifferenceSection from "./components/DifferenceSection";
 import ServicesSection from "./components/ServicesSection";
 import QuoteSection from "./components/QuoteSection";
 import CTASection from "./components/CTASection";
-import Footer from "../../../components/Footer";
+import Footer from "../../../components/footer";
 
 export default function ConcreteInstallationPage() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(
