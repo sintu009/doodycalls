@@ -2,6 +2,8 @@ interface HeroSectionProps {
   isVisible: boolean;
 }
 
+import mainSection from "../assets/mainSection.jpeg";
+
 export default function HeroSection({ isVisible }: HeroSectionProps) {
   return (
     <section
@@ -9,7 +11,7 @@ export default function HeroSection({ isVisible }: HeroSectionProps) {
       data-animate
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://readdy.ai/api/search-image?query=Beautiful%20community%20park%20with%20families%20walking%20dogs%2C%20children%20playing%2C%20clean%20walkways%20and%20green%20spaces%2C%20bright%20sunny%20day%20with%20trees%20and%20well-maintained%20grass%20areas%2C%20friendly%20neighborhood%20atmosphere%20with%20modern%20playground%20equipment%20and%20benches%2C%20professional%20photography%20style%20with%20warm%20natural%20lighting&width=1920&height=1080&seq=hero-community&orientation=landscape')`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${mainSection}))`,
       }}
     >
       <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">

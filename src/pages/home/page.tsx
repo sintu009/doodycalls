@@ -6,9 +6,9 @@ import ProblemSection from "../about/components/ProblemSection";
 import ResponsibilitySection from "../about/components/ResponsibilitySection";
 import RootsSection from "../about/components/RootsSection";
 import WasteWiseSection from "../about/components/WasteWiseSection";
-import Footer from "../product-detail/components/Footer";
 import HeroSection from "../product-detail/components/HeroSection";
 import Header from "../../../components/Header";
+import Footer from "../../../components/Footer";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
