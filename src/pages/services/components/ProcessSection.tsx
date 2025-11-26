@@ -153,7 +153,7 @@ export default function ProcessSection() {
         <div className={`transform transition-all duration-1000 ${
           isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
         }`} style={{ transitionDelay: '800ms' }}>
-          <div className="bg-gradient-to-r from-[#2E5A51] to-[#F28C28] rounded-3xl p-8 text-center text-white shadow-2xl">
+          <div className=" bg-[#639e77] rounded-3xl p-8 text-center text-white shadow-2xl">
             <h3 className="text-3xl font-bold mb-4">Ready to Get Started?</h3>
             <p className="text-xl mb-6 opacity-90">
               Let's schedule your free site evaluation and create a custom service plan

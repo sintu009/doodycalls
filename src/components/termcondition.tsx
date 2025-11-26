@@ -13,7 +13,7 @@ export default function TermsConditions() {
         By using this website, you acknowledge that you have read, understood,
         and agree to these Terms of Use, our Privacy Policy, and all applicable
         laws.
-      </p>
+      </p> 
 
       <h2 className="text-2xl font-semibold mt-6 mb-3">2. Use of Website</h2>
       <p className="mb-2">

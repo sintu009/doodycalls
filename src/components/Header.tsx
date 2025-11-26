@@ -75,7 +75,7 @@ export default function Header() {
                     }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    Concrete Installation
+                     Station & Trash Can Installation
                   </a>
                   <a
                     href="/dog-waste-station-installation"
@@ -186,7 +186,7 @@ export default function Header() {
                 onClick={() => setIsQuoteOpen(true)}
                 className="bg-[#F28C28] text-white px-6 py-2 rounded-full hover:bg-[#e07a1f] transition-colors whitespace-nowrap cursor-pointer"
               >
-                Get Quote
+                Get a Free Quote
               </button>
             </nav>
 
@@ -249,34 +249,34 @@ export default function Header() {
                   {servicesOpen && (
                     <div className="mt-2 flex flex-col space-y-2 pl-4">
                       <a
-                        href="/services/pet-waste-management"
+                        href="/concrete-installation"
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate("/services/pet-waste-management");
+                          navigate("/concrete-installation");
                         }}
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
-                        Pet Waste Management
+                         Station & Trash Can Installation
                       </a>
                       <a
-                        href="/services/residential"
+                        href="/dog-waste-station-installation"
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate("/services/residential");
+                          navigate("/dog-waste-station-installation");
                         }}
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
-                        Residential Service
+                        Dog Waste Station Installation
                       </a>
                       <a
-                        href="/services/commercial"
+                        href="/"
                         onClick={(e) => {
                           e.preventDefault();
-                          navigate("/services/commercial");
+                          navigate("/");
                         }}
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
-                        Commercial Service
+                        Repair ReInstallation
                       </a>
                     </div>
                   )}
@@ -300,22 +300,40 @@ export default function Header() {
                   {productsOpen && (
                     <div className="mt-2 flex flex-col space-y-2 pl-4">
                       <a
+                        href="/educational-signs"
+                        className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
+                      >
+                        Educational-signs
+                      </a>
+                      <a
+                        href="/dog-waste-bags"
+                        className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
+                      >
+                        Dog-waste-bags
+                      </a>
+                      <a
+                        href="/trash-cans"
+                        className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
+                      >
+                        Trash-cans
+                      </a>
+                      <a
                         href="/products-overview#masterchief"
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
-                        The Master Chief
+                        The Master Chief™
                       </a>
                       <a
                         href="/products-overview#commander"
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
-                        The Commander
+                        The Commander™
                       </a>
                       <a
                         href="/products-overview#admiral"
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
-                        The Admiral
+                        The Admiral™
                       </a>
                     </div>
                   )}

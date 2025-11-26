@@ -1,11 +1,14 @@
-import { RouteObject } from "react-router-dom";
+
+import TermsConditions from "../components/termcondition";
+import PrivacyPolicy from "../components/privacyPolicy";
+import type { RouteObject } from "react-router-dom";
 import { lazy } from "react";
 
 const Home = lazy(() => import("../pages/home/page"));
 const About = lazy(() => import("../pages/about/page"));
 const Products = lazy(() => import("../pages/products/page"));
 const ProductsOverview = lazy(() => import("../pages/products-overview/page"));
-const ProductDetail = lazy(() => import("../pages/product-detail/page"));
+// const ProductDetail = lazy(() => import("../pages/product-detail/page"));
 const Services = lazy(() => import("../pages/services/page"));
 const NotFound = lazy(() => import("../pages/NotFound"));
 
@@ -21,7 +24,15 @@ import DogWasteStationInstallationPage from "../pages/dog-waste-station-installa
 
 const routes: RouteObject[] = [
   {
-    path: "/",
+    path: "/terms",
+    element: <TermsConditions />,
+  },
+  {
+    path: "/privacy",
+    element: <PrivacyPolicy />,
+  },
+  {
+    path: "/", 
     element: <Home />,
   },
   {

@@ -41,7 +41,7 @@ export default function ContactSection({ isVisible }: ContactSectionProps) {
             visible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
           }`}>
             <h2 className="text-4xl md:text-5xl font-bold text-[#2E5A51] mb-6 leading-tight">
-              Prefer to <span className="text-[#F28C28]">Talk Now?</span>
+              Talk to  <span className="text-[#F28C28]">an Expert!</span>
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
               We're happy to help answer your questions and discuss your community's specific needs.
@@ -95,7 +95,7 @@ export default function ContactSection({ isVisible }: ContactSectionProps) {
               <div className="absolute inset-0 bg-gradient-to-br from-[#2E5A51]/5 to-[#F28C28]/5"></div>
               
               <div className="relative z-10 text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-[#2E5A51] to-[#F28C28] rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20  bg-[#639e77] rounded-full flex items-center justify-center mx-auto mb-6">
                   <i className="ri-customer-service-2-line text-3xl text-white"></i>
                 </div>
                 

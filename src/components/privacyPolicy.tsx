@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function PrivacyPolicy() {
-  return (
+  return ( 
     <div className="max-w-4xl mx-auto p-6 text-gray-800 leading-relaxed">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <p className="text-sm mb-6">Effective Date: November 20, 2025</p>

@@ -22,8 +22,7 @@ export default function Footer() {
               />
             </h3>
             <p className="text-lg opacity-90 leading-relaxed">
-              Professional pet waste management services for communities across
-              North Carolina.
+              Professional pet waste management services for communities across Wake, Durham, and Johnston counties
             </p>
           </div>
 
@@ -78,14 +77,14 @@ export default function Footer() {
           <nav className="flex space-x-4" aria-label="Footer navigation">
             <button
               type="button"
-              onClick={() => navigate("/privacyPolicy")}
+              onClick={() => navigate("/privacy")}
               className="text-sm opacity-75 hover:underline"
             >
               Privacy Policy
             </button>
             <button
               type="button"
-              onClick={() => navigate("/termcondition")}
+              onClick={() => navigate("/terms")}
               className="text-sm opacity-75 hover:underline"
             >
               Terms &amp; Conditions

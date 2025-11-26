@@ -30,7 +30,7 @@ export default function ServiceAreaSection({ isVisible }: ServiceAreaSectionProp
 
   const serviceAreas = [
     'Raleigh', 'Cary', 'Apex', 'Morrisville', 'Holly Springs',
-    'Fuquay-Varina', 'Garner', 'Wake Forest', 'Knightdale', 'Rolesville'
+    'Fuquay-Varina', 'Garner', 'Wake Forest', 'Knightdale', 'Clayton'
   ];
 
   return (
