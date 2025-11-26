@@ -14,7 +14,7 @@ export default function MasterChiefSection({
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="masterchief">
       <div className="max-w-7xl mx-auto px-6">
         <div
           id="masterchief"

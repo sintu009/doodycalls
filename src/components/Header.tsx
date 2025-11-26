@@ -149,19 +149,34 @@ export default function Header() {
                     Trash-cans
                   </a>
                   <a
-                    href="/products-overview#admiral"
+                    href="/products-overview#masterchief"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setProductsOpen(false);
+                      navigate("/products-overview#masterchief");
+                    }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
                     The Master Chief™
                   </a>
                   <a
-                    href="/products-overview#admiral"
+                    href="/products-overview#commander"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setProductsOpen(false);
+                      navigate("/products-overview#commander");
+                    }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
                     The Commander™
                   </a>
                   <a
                     href="/products-overview#admiral"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setProductsOpen(false);
+                      navigate("/products-overview#admiral");
+                    }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
                     The Admiral™
@@ -319,18 +334,30 @@ export default function Header() {
                       </a>
                       <a
                         href="/products-overview#masterchief"
+                        onClick={() => {
+                          setProductsOpen(false);
+                          setIsMenuOpen(false);
+                        }}
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
                         The Master Chief™
                       </a>
                       <a
                         href="/products-overview#commander"
+                        onClick={() => {
+                          setProductsOpen(false);
+                          setIsMenuOpen(false);
+                        }}
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
                         The Commander™
                       </a>
                       <a
                         href="/products-overview#admiral"
+                        onClick={() => {
+                          setProductsOpen(false);
+                          setIsMenuOpen(false);
+                        }}
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
                         The Admiral™

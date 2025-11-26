@@ -13,6 +13,25 @@ import Footer from "../../components/footer";
 
 export default function ProductsOverview() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
+  const [showOnlySection, setShowOnlySection] = useState<string | null>(null);
+
+  useEffect(() => {
+    const checkHash = () => {
+      const hash = window.location.hash;
+      if (hash === "#masterchief") {
+        setShowOnlySection("masterchief");
+      } else if (hash === "#commander") {
+        setShowOnlySection("commander");
+      } else if (hash === "#admiral") {
+        setShowOnlySection("admiral");
+      } else {
+        setShowOnlySection(null);
+      }
+    };
+    checkHash();
+    window.addEventListener("hashchange", checkHash);
+    return () => window.removeEventListener("hashchange", checkHash);
+  }, []);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -39,14 +58,24 @@ export default function ProductsOverview() {
     <div className="min-h-screen bg-white">
       <Header />
       <main>
-        <HeroSection isVisible={isVisible.hero} />
-        <SmartFeaturesSection isVisible={isVisible.features} />
-        <MasterChiefSection isVisible={isVisible.masterchief} />
-        <CommanderSection isVisible={isVisible.commander} />
-        <AdmiralSection isVisible={isVisible.admiral} />
-        <SolarLightSection isVisible={isVisible["solar-light"]} />
-        <EnvironmentalSection isVisible={isVisible.environmental} />
-        <ContactSection isVisible={isVisible.contact} />
+        {showOnlySection === "masterchief" ? (
+          <MasterChiefSection isVisible={true} />
+        ) : showOnlySection === "commander" ? (
+          <CommanderSection isVisible={true} />
+        ) : showOnlySection === "admiral" ? (
+          <AdmiralSection isVisible={true} />
+        ) : (
+          <>
+            <HeroSection isVisible={isVisible.hero} />
+            <SmartFeaturesSection isVisible={isVisible.features} />
+            <MasterChiefSection isVisible={isVisible.masterchief} />
+            <CommanderSection isVisible={isVisible.commander} />
+            <AdmiralSection isVisible={isVisible.admiral} />
+            <SolarLightSection isVisible={isVisible["solar-light"]} />
+            <EnvironmentalSection isVisible={isVisible.environmental} />
+            <ContactSection isVisible={isVisible.contact} />
+          </>
+        )}
       </main>
       <Footer />
     </div>
