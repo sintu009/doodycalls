@@ -7,7 +7,7 @@ import AdmiralSection from "./components/AdmiralSection";
 import SolarLightSection from "./components/SolarLightSection";
 import EnvironmentalSection from "./components/EnvironmentalSection";
 import ContactSection from "./components/ContactSection";
- 
+
 import Header from "../../components/Header";
 import Footer from "../../components/footer";
 

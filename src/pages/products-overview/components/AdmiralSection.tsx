@@ -1,3 +1,5 @@
+import { useState } from "react";
+import GetQuoteModal from "../../../components/GetQuoteModal";
 interface AdmiralSectionProps {
   isVisible: boolean;
 }
@@ -9,6 +11,7 @@ export default function AdmiralSection({ isVisible }: AdmiralSectionProps) {
     "Premium aluminum and galvanized steel construction",
     "Designed for odor-sensitive or high-end areas",
   ];
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
   return (
     <section className="py-20 bg-white">
@@ -65,7 +68,10 @@ export default function AdmiralSection({ isVisible }: AdmiralSectionProps) {
               </p>
             </div>
 
-            <button className="bg-[#F28C28] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#e07a1f] transition-colors duration-200 whitespace-nowrap cursor-pointer">
+            <button
+              onClick={() => setIsQuoteOpen(true)}
+              className="bg-[#F28C28] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#e07a1f] transition-colors duration-200 whitespace-nowrap cursor-pointer"
+            >
               Explore The Admiral™
             </button>
           </div>
@@ -85,6 +91,10 @@ export default function AdmiralSection({ isVisible }: AdmiralSectionProps) {
             />
           </div>
         </div>
+        <GetQuoteModal
+          isOpen={isQuoteOpen}
+          onClose={() => setIsQuoteOpen(false)}
+        />
       </div>
     </section>
   );

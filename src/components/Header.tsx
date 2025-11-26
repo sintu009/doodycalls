@@ -75,7 +75,7 @@ export default function Header() {
                     }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                     Station & Trash Can Installation
+                    Station & Trash Can Installation
                   </a>
                   <a
                     href="/dog-waste-station-installation"
@@ -185,7 +185,7 @@ export default function Header() {
               </div>
 
               <a
-                href="/"
+                href="/blog"
                 className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
               >
                 Blogs
@@ -271,7 +271,7 @@ export default function Header() {
                         }}
                         className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer"
                       >
-                         Station & Trash Can Installation
+                        Station & Trash Can Installation
                       </a>
                       <a
                         href="/dog-waste-station-installation"

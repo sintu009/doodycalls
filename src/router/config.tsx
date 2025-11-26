@@ -1,4 +1,3 @@
-
 import TermsConditions from "../components/termcondition";
 import PrivacyPolicy from "../components/privacyPolicy";
 import type { RouteObject } from "react-router-dom";
@@ -21,6 +20,8 @@ import TrashCans from "../pages/trash-cans/page";
 
 import ConcreteInstallationPage from "../pages/concrete-installation/page";
 import DogWasteStationInstallationPage from "../pages/dog-waste-station-installation";
+const Blog = lazy(() => import("../pages/blog/page"));
+const BlogDetail = lazy(() => import("../pages/blog-detail/page"));
 
 const routes: RouteObject[] = [
   {
@@ -32,7 +33,7 @@ const routes: RouteObject[] = [
     element: <PrivacyPolicy />,
   },
   {
-    path: "/", 
+    path: "/",
     element: <Home />,
   },
   {
@@ -82,6 +83,14 @@ const routes: RouteObject[] = [
   {
     path: "/concrete-installation",
     element: <ConcreteInstallationPage />,
+  },
+  {
+    path: "/blog",
+    element: <Blog />,
+  },
+  {
+    path: "/blog/:slug",
+    element: <BlogDetail />,
   },
 ];
 

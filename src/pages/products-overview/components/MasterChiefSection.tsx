@@ -1,3 +1,6 @@
+import { useState } from "react";
+import GetQuoteModal from "../../../components/GetQuoteModal";
+
 interface MasterChiefSectionProps {
   isVisible: boolean;
 }
@@ -13,6 +16,7 @@ export default function MasterChiefSection({
     "Installation provided by DoodyCalls",
   ];
 
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   return (
     <section className="py-20 bg-white" id="masterchief">
       <div className="max-w-7xl mx-auto px-6">
@@ -79,7 +83,10 @@ export default function MasterChiefSection({
               </p>
             </div>
 
-            <button className="bg-[#F28C28] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#e07a1f] transition-colors duration-200 whitespace-nowrap cursor-pointer">
+            <button
+              onClick={() => setIsQuoteOpen(true)}
+              className="bg-[#F28C28] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#e07a1f] transition-colors duration-200 whitespace-nowrap cursor-pointer"
+            >
               Get Your Quote
             </button>
           </div>
@@ -99,6 +106,10 @@ export default function MasterChiefSection({
             />
           </div>
         </div>
+        <GetQuoteModal
+          isOpen={isQuoteOpen}
+          onClose={() => setIsQuoteOpen(false)}
+        />
       </div>
     </section>
   );

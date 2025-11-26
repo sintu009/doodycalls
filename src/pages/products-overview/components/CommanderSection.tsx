@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+// import { Link } from "react-router-dom";
+import GetQuoteModal from "../../../components/GetQuoteModal";
 
 interface CommanderSectionProps {
   isVisible: boolean;
 }
 
 export default function CommanderSection({ isVisible }: CommanderSectionProps) {
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   return (
     <section className="py-20 bg-[#F6F6F6]">
       <div className="max-w-7xl mx-auto px-6">
@@ -82,14 +85,25 @@ export default function CommanderSection({ isVisible }: CommanderSectionProps) {
               <p>Dog parks, sidewalks, and community trails.</p>
             </div>
 
-            <Link
-              to="/product/commander"
+            <button
+              onClick={() => setIsQuoteOpen(true)}
               className="inline-block bg-[#F28C28] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#e07a1f] transition-colors duration-200 whitespace-nowrap cursor-pointer"
             >
               Get Your Quote Now
-            </Link>
+            </button>
+
+            {/* <button
+              onClick={() => setIsQuoteOpen(true)}
+              className="bg-[#F28C28] text-white px-8 py-3 rounded-full font-semibold hover:bg-[#e07a1f] transition-colors duration-200 whitespace-nowrap cursor-pointer"
+            >
+              Get Your Quote
+            </button> */}
           </div>
         </div>
+        <GetQuoteModal
+          isOpen={isQuoteOpen}
+          onClose={() => setIsQuoteOpen(false)}
+        />
       </div>
     </section>
   );

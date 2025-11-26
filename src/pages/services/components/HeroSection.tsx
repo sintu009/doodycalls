@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from "react";
+import GetQuoteModal from "../../../components/GetQuoteModal";
 
 export default function HeroSection() {
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
@@ -66,12 +68,19 @@ export default function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-            <button className="bg-gradient-to-r from-[#F28C28] to-[#e07a1f] text-white px-10 py-5 rounded-2xl text-lg font-semibold hover:shadow-2xl hover:shadow-[#F28C28]/50 transform hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer">
+            <button
+              onClick={() => setIsQuoteOpen(true)}
+              className="bg-gradient-to-r from-[#F28C28] to-[#e07a1f] text-white px-10 py-5 rounded-2xl text-lg font-semibold hover:shadow-2xl hover:shadow-[#F28C28]/50 transform hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
+            >
               Request a Free Site Evaluation
             </button>
-            <button className="border-2 border-[#2E5A51] text-[#2E5A51] px-10 py-5 rounded-2xl text-lg font-semibold hover:bg-[#2E5A51] hover:text-white transition-all duration-300 whitespace-nowrap cursor-pointer">
+            <a
+              href="tel:+19196345383"
+              aria-label="Call +919-634-5383"
+              className="border-2 border-[#2E5A51] text-[#2E5A51] px-10 py-5 rounded-2xl text-lg font-semibold hover:bg-[#2E5A51] hover:text-white transition-all duration-300 whitespace-nowrap cursor-pointer inline-flex items-center justify-center"
+            >
               Call 919-634-5383
-            </button>
+            </a>
           </div>
         </div>
 
@@ -127,6 +136,10 @@ export default function HeroSection() {
           ></path>
         </svg>
       </div>
+      <GetQuoteModal
+        isOpen={isQuoteOpen}
+        onClose={() => setIsQuoteOpen(false)}
+      />
     </section>
   );
 }
