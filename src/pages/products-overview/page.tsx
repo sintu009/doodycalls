@@ -7,8 +7,9 @@ import AdmiralSection from "./components/AdmiralSection";
 import SolarLightSection from "./components/SolarLightSection";
 import EnvironmentalSection from "./components/EnvironmentalSection";
 import ContactSection from "./components/ContactSection";
-import Footer from "../../../components/footer";
+ 
 import Header from "../../../components/Header";
+import Footer from "../../../components/footer";
 
 export default function ProductsOverview() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
