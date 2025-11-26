@@ -2,176 +2,77 @@ export const blogPosts = [
   {
     id: 1,
     slug: "keeping-communities-clean-dog-waste-management",
-    title:
-      "Keeping Communities Clean: The Importance of Proper Dog Waste Management",
+    title: "Cary's Courteous Spirit: Clean Community, Kind Hearts",
     description:
-      "Discover why proper dog waste management is crucial for community health, environmental protection, and maintaining beautiful shared spaces.",
+      "Cary is more than a rapidly growing town; it’s a community where children play along shaded sidewalks, neighbors recognize familiar faces, and local greenways are filled with the rhythm of daily walks. ",
     image:
       "https://readdy.ai/api/search-image?query=Clean%20community%20park%20with%20happy%20dog%20owners%20walking%20their%20pets%20on%20maintained%20pathways%2C%20professional%20dog%20waste%20stations%20visible%20in%20background%2C%20bright%20sunny%20day%20with%20green%20grass%20and%20trees%2C%20modern%20community%20living%2C%20professional%20photography%20style&width=800&height=500&seq=blog1&orientation=landscape",
-    date: "2025-01-15",
+    date: "2025-11-27",
     author: "DoodyCalls Team",
     category: "Community Health",
     content: `
-      <p>As communities grow and more families welcome furry friends into their homes, the importance of proper dog waste management has never been more critical. At DoodyCalls, we've seen firsthand how effective waste management systems transform neighborhoods into cleaner, healthier, and more enjoyable spaces for everyone.</p>
+     <div class="max-w-4xl mx-auto px-6 py-10 leading-8 text-[1.1rem] text-gray-800">
+  
+  <p>
+    Cary is more than a rapidly growing town; it’s a community where children play along shaded sidewalks, neighbors recognize familiar faces, and local greenways are filled with the rhythm of daily walks. Here, community-mindedness isn’t optional—it’s a feeling woven into everyday life. Caring for shared spaces shows we value not just our homes, but the entire town.
+  </p>
 
-      <h2>The Hidden Dangers of Dog Waste</h2>
-      <p>Many people don't realize that dog waste is more than just an unsightly nuisance. It poses serious health and environmental risks:</p>
-      <ul>
-        <li><strong>Disease Transmission:</strong> Dog waste can contain harmful bacteria, parasites, and viruses that spread diseases to humans and other animals.</li>
-        <li><strong>Water Contamination:</strong> When left on the ground, rain washes waste into storm drains, contaminating local waterways and affecting aquatic ecosystems.</li>
-        <li><strong>Soil Pollution:</strong> Unlike natural fertilizers, dog waste doesn't break down beneficially and can damage grass and plants.</li>
-        <li><strong>Community Aesthetics:</strong> Unmanaged waste creates an unpleasant environment that reduces property values and resident satisfaction.</li>
-      </ul>
+  <h2 class="mb-4 mt-10 text-2xl font-bold text-green-700">Why Picking Up Is More Than a Chore</h2>
+  <p>
+    Whether you’re walking home after a latte, rushing to dinner, or someone else walked the dog earlier—accidents happen. But when dog waste is left behind, it’s more than just unpleasant; it breaks the sense of trust the community relies on. In Cary, respect is shown in the small details—carrying a bag and being responsible for your pet.
+  </p>
 
-      <h2>The Solution: Professional Waste Station Installation</h2>
-      <p>Installing strategically placed dog waste stations throughout your community provides residents with convenient disposal options. Our professional installation services ensure:</p>
-      <ul>
-        <li>Durable, weather-resistant stations that last for years</li>
-        <li>Optimal placement based on foot traffic and usage patterns</li>
-        <li>Concrete-secured installations that won't lean or loosen</li>
-        <li>Attractive designs that complement your community's aesthetics</li>
-      </ul>
+  <h2 class="mb-4 mt-10 text-2xl font-bold text-green-700">Cary’s Dog Waste Ordinance — The Real Deal</h2>
+  <p>
+    Cary’s Municipal Code §6-64 (Defecation on Streets and Private Property) clearly states:
+  </p>
 
-      <h2>Creating a Culture of Responsibility</h2>
-      <p>Beyond infrastructure, successful waste management requires community engagement. We recommend:</p>
-      <ul>
-        <li>Educational signage that explains the importance of picking up after pets</li>
-        <li>Regular maintenance and bag refills to ensure stations are always functional</li>
-        <li>Community guidelines that make expectations clear</li>
-        <li>Positive reinforcement through clean, well-maintained common areas</li>
-      </ul>
+  <blockquote class="p-4 bg-green-50 border-l-4 border-green-600 italic my-4">
+    “It is unlawful for the owner of any animal to fail or refuse to remove feces deposited by the animal
+    on any street, sidewalk, park, or other publicly-owned area, or on any private property.”
+  </blockquote>
 
-      <h2>The DoodyCalls Difference</h2>
-      <p>With years of experience serving communities across the region, we understand that every neighborhood has unique needs. Our team works closely with HOAs, property managers, and community leaders to design waste management solutions that work.</p>
+  <ul class="list-disc pl-6 mt-4 space-y-2">
+    <li><strong>$250</strong> for the first violation</li>
+    <li><strong>$50</strong> for each additional violation</li>
+    <li>Repeat violations may lead to misdemeanor enforcement (Town of Cary Code §6-132)</li>
+  </ul>
 
-      <p>From initial consultation to installation and ongoing maintenance, we're committed to helping your community stay clean, healthy, and beautiful. Because when it comes to dog waste management, professional solutions make all the difference.</p>
+  <h2 class="mb-4 mt-10 text-2xl font-bold text-green-700">It’s Not Just Mess — It’s a Matter of Trust</h2>
+  <p>
+    Cary’s community thrives on trust—trust that neighbors will keep sidewalks and paths clean. Dog waste left behind doesn’t just ruin the day; it also harms local waterways. When waste washes into storm drains, it flows into creeks and ultimately the Neuse River Basin, affecting wildlife, water quality, and the town’s natural beauty.
+  </p>
 
-      <p><strong>Ready to improve your community's cleanliness?</strong> Contact DoodyCalls today for a free consultation and quote.</p>
-    `,
-  },
-  {
-    id: 2,
-    slug: "choosing-right-dog-waste-station",
-    title: "Choosing the Right Dog Waste Station for Your Property",
-    description:
-      "A comprehensive guide to selecting the perfect dog waste station that meets your community's needs, budget, and aesthetic preferences.",
-    image:
-      "https://readdy.ai/api/search-image?query=Modern%20dog%20waste%20station%20installed%20in%20beautiful%20landscaped%20area%2C%20sleek%20design%20with%20waste%20bag%20dispenser%2C%20professional%20installation%20in%20upscale%20community%20setting%2C%20clean%20and%20attractive%20appearance%2C%20professional%20photography&width=800&height=500&seq=blog2&orientation=landscape",
-    date: "2025-01-10",
-    author: "DoodyCalls Team",
-    category: "Product Guide",
-    content: `
-      <p>Selecting the right dog waste station for your property is a crucial decision that impacts both functionality and aesthetics. With various options available, understanding the key features and considerations will help you make an informed choice.</p>
+  <h2 class="mb-4 mt-10 text-2xl font-bold text-green-700">If You Notice a Mess and It’s Not Yours</h2>
+  <p>You can help maintain community cleanliness without feeling awkward. Here’s what you can do:</p>
 
-      <h2>Understanding Your Community's Needs</h2>
-      <p>Before selecting a waste station, assess your property's specific requirements:</p>
-      <ul>
-        <li><strong>Traffic Volume:</strong> How many dogs regularly use your common areas?</li>
-        <li><strong>Space Availability:</strong> Where can stations be placed for maximum convenience?</li>
-        <li><strong>Climate Conditions:</strong> What weather challenges will the stations face?</li>
-        <li><strong>Aesthetic Preferences:</strong> What design complements your property's look?</li>
-        <li><strong>Budget Constraints:</strong> What's your investment range for initial setup and maintenance?</li>
-      </ul>
+  <ul class="list-disc pl-6 mt-4 space-y-2">
+    <li>Contact Cary Animal Services through the Police Department at <strong>(919) 319-4517</strong></li>
+    <li>Provide clear details: location, time, and frequency</li>
+    <li>If you’re part of an HOA, send a friendly reminder through community channels</li>
+    <li>Most citations begin with a warning before stronger enforcement</li>
+  </ul>
 
-      <h2>Key Features to Consider</h2>
-      
-      <h3>1. Durability and Materials</h3>
-      <p>Quality waste stations are built to withstand years of use and exposure to the elements. Look for:</p>
-      <ul>
-        <li>Heavy-duty steel or aluminum construction</li>
-        <li>Powder-coated finishes that resist rust and fading</li>
-        <li>UV-resistant components for sun exposure</li>
-        <li>Weatherproof bag dispensers</li>
-      </ul>
+  <h2 class="mb-4 mt-10 text-2xl font-bold text-green-700">How DoodyCalls of Wake County Supports Cary</h2>
+  <p>
+    DoodyCalls isn’t an outsider service—their team lives and works within the Cary community. Whether life gets busy or mobility becomes a challenge, DoodyCalls helps homeowners, HOAs, and businesses keep their spaces clean.
+  </p>
 
-      <h3>2. Capacity and Convenience</h3>
-      <p>The right station should accommodate your community's usage patterns:</p>
-      <ul>
-        <li>Adequate waste receptacle size to minimize overflow</li>
-        <li>Easy-to-access bag dispensers</li>
-        <li>Simple maintenance and bag replacement</li>
-        <li>Clear signage and instructions</li>
-      </ul>
+  <ul class="list-disc pl-6 mt-4 mb-6 space-y-2">
+    <li>Custom signs to reinforce pet rules</li>
+    <li>Pet waste stations</li>
+    <li>Dog poop pickup service (weekly or bi-weekly)</li>
+    <li>Commercial pet waste removal for HOAs, parks, dog parks, and apartments</li>
+    <li>Roadside dog waste control for shared spaces</li>
+  </ul>
 
-      <h3>3. Installation Options</h3>
-      <p>Different properties require different installation methods:</p>
-      <ul>
-        <li><strong>In-Ground/Concrete Mount:</strong> Most permanent and stable option</li>
-        <li><strong>Surface Mount:</strong> Flexible placement with bolt-down installation</li>
-        <li><strong>Portable:</strong> Temporary or seasonal use options</li>
-      </ul>
+  <p class="font-semibold text-green-700 text-xl">
+    “Enjoy Cary’s peaceful mornings. Let us handle the cleanup.”
+  </p>
 
-      <h2>Popular Station Models</h2>
-      
-      <h3>The Commander</h3>
-      <p>Our flagship model offers premium features including:</p>
-      <ul>
-        <li>Large capacity waste receptacle</li>
-        <li>Dual bag dispensers</li>
-        <li>Optional solar lighting</li>
-        <li>Sleek, modern design</li>
-      </ul>
+</div>
 
-      <h3>The Admiral</h3>
-      <p>A cost-effective solution perfect for smaller communities:</p>
-      <ul>
-        <li>Compact footprint</li>
-        <li>Essential features without extras</li>
-        <li>Durable construction</li>
-        <li>Easy maintenance</li>
-      </ul>
 
-      <h3>The Master Chief</h3>
-      <p>Heavy-duty option for high-traffic areas:</p>
-      <ul>
-        <li>Extra-large capacity</li>
-        <li>Reinforced construction</li>
-        <li>Multiple bag dispensers</li>
-        <li>Commercial-grade components</li>
-      </ul>
-
-      <h2>Additional Considerations</h2>
-      
-      <h3>Bag Compatibility</h3>
-      <p>Ensure your chosen station works with readily available, eco-friendly waste bags. We offer biodegradable options that break down naturally while maintaining strength and reliability.</p>
-
-      <h3>Maintenance Requirements</h3>
-      <p>Consider ongoing maintenance needs:</p>
-      <ul>
-        <li>How often will bags need refilling?</li>
-        <li>What's the waste collection schedule?</li>
-        <li>Are replacement parts readily available?</li>
-        <li>Can maintenance be handled in-house or professionally?</li>
-      </ul>
-
-      <h3>Educational Signage</h3>
-      <p>Complement your stations with clear, attractive signage that:</p>
-      <ul>
-        <li>Explains proper usage</li>
-        <li>Highlights community rules</li>
-        <li>Educates about environmental impact</li>
-        <li>Encourages responsible pet ownership</li>
-      </ul>
-
-      <h2>Making the Right Investment</h2>
-      <p>While initial cost is important, consider the total value:</p>
-      <ul>
-        <li><strong>Longevity:</strong> Quality stations last 10+ years</li>
-        <li><strong>Reduced Maintenance:</strong> Durable materials mean fewer repairs</li>
-        <li><strong>Property Value:</strong> Clean communities attract and retain residents</li>
-        <li><strong>Resident Satisfaction:</strong> Convenient amenities improve quality of life</li>
-      </ul>
-
-      <h2>Expert Consultation</h2>
-      <p>At DoodyCalls, we help property managers and HOAs select the perfect waste management solution. Our team provides:</p>
-      <ul>
-        <li>Free on-site evaluations</li>
-        <li>Customized recommendations</li>
-        <li>Professional installation</li>
-        <li>Ongoing support and maintenance options</li>
-      </ul>
-
-      <p><strong>Ready to find the perfect waste station for your property?</strong> Contact our team today for expert guidance and a free quote.</p>
     `,
   },
   {
