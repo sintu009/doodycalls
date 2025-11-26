@@ -8,7 +8,7 @@ import RootsSection from "../about/components/RootsSection";
 import WasteWiseSection from "../about/components/WasteWiseSection";
 import HeroSection from "../product-detail/components/HeroSection";
 import Header from "../../../components/Header";
- import Footer from "../../../components/footer";
+import Footer from "../../../components/footer";
 
 export default function Home() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
