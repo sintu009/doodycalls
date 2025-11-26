@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import Header from "../../../components/Header";
+import Header from "../../components/Header";
 import HeroSection from "./components/HeroSection";
 import WasteStationsSection from "./components/WasteStationsSection";
 import WasteBagsSection from "./components/WasteBagsSection";
 import AddOnsSection from "./components/AddOnsSection";
 import EnvironmentalSection from "./components/EnvironmentalSection";
 import CTASection from "./components/CTASection";
-import Footer from "../../../components/footer";
+import Footer from "../../components/footer";
 
 export default function Products() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});

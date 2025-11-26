@@ -5,7 +5,7 @@ import ServicesSection from "./components/ServicesSection";
 import WhyChooseSection from "./components/WhyChooseSection";
 import QuoteSection from "./components/QuoteSection";
 import ContactSection from "./components/ContactSection";
-import Footer from "../../../components/footer";
+import Footer from "../../components/footer";
 
 export default function DogStationServicesPage() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(

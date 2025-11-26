@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import GetQuoteModal from "../../../../components/GetQuoteModal";
+import GetQuoteModal from "../../../components/GetQuoteModal";
 
 interface HeroSectionProps {
   isVisible: boolean;

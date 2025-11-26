@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import Header from "../../../components/Header";
+import Header from "../../components/Header";
 import HeroSection from "./components/HeroSection";
 import ProductOverview from "./components/ProductOverview";
 import CompleteKit from "./components/CompleteKit";
 import SmartDesign from "./components/SmartDesign";
 import TechnicalSpecs from "./components/TechnicalSpecs";
 import EnvironmentalPromise from "./components/EnvironmentalPromise";
-import CTASection from "./components/CTASection";
-import Footer from "../../../components/footer";
+import CTASection from "./components/CTASection"; 
+import Footer from "../../components/footer";
  
 export default function ProductDetail() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});

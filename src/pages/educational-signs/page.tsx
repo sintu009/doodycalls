@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Header from "../../../components/Header";
+import Header from "../../components/Header";
 import HeroSection from "./components/HeroSection";
 import OverviewSection from "./components/OverviewSection";
 import PurposeSection from "./components/PurposeSection";
@@ -8,7 +8,7 @@ import InstallationSection from "./components/InstallationSection";
 import EducationalSection from "./components/EducationalSection";
 import EnvironmentalSection from "./components/EnvironmentalSection";
 import ContactSection from "./components/ContactSection";
-import Footer from "../../../components/footer";
+import Footer from "../../components/footer";
  
 
 export default function EducationalSignsPage() {

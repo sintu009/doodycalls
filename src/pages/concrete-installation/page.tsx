@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Header from "../../../components/Header";
+import Header from "../../components/Header";
 import HeroSection from "./components/HeroSection";
 import IntroSection from "./components/IntroSection";
 import WhyConcreteSection from "./components/WhyConcreteSection";
@@ -7,7 +7,7 @@ import DifferenceSection from "./components/DifferenceSection";
 import ServicesSection from "./components/ServicesSection";
 import QuoteSection from "./components/QuoteSection";
 import CTASection from "./components/CTASection"; 
- import Footer from "../../../components/footer";
+ import Footer from "../../components/footer";
 
 export default function ConcreteInstallationPage() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(

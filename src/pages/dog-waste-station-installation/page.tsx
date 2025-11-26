@@ -6,8 +6,8 @@ import WhyChooseSection from "./components/WhyChooseSection";
 import CommunityBenefitsSection from "./components/CommunityBenefitsSection";
 import FinalCTASection from "./components/FinalCTASection";
  
-import Header from "../../../components/Header";
-import Footer from "../../../components/footer";
+import Header from "../../components/Header";
+import Footer from "../../components/footer";
 
 export default function DogWasteStationInstallationPage() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import logo from "../assets/logo_doody_calls.webp";
+import logo from "../../assets/logo_doody_calls.webp";
 import GetQuoteModal from "./GetQuoteModal";
 
 export default function Header() {

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import Header from "../../../components/Header";
+import Header from "../../components/Header";
 import HeroSection from "./components/HeroSection";
 import EPASection from "./components/EPASection";
 import ProductsSection from "./components/ProductsSection";
 import ComparisonSection from "./components/ComparisonSection";
 import DisclaimerSection from "./components/DisclaimerSection";
 import ContactSection from "./components/ContactSection";
-import Footer from "../../../components/footer";
+import Footer from "../../components/footer";
 
 export default function DogWasteBags() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});

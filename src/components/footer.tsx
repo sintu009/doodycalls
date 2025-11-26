@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import logo from "../assets/logo_doody_white_calls.webp";
+import logo from "../../assets/logo_doody_white_calls.webp";
 
 export default function Footer() {
   const navigate = useNavigate();
@@ -72,7 +72,7 @@ export default function Footer() {
 
         <div className="border-t border-white/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm opacity-75 mb-4 md:mb-0">
-            © 2025 DoodyCalls of Wake County. All rights reserved.
+            © 2025 GreenWalks, LLC – DBA DoodyCalls of Wake County All rights reserved.
           </p>
 
           <nav className="flex space-x-4" aria-label="Footer navigation">
