@@ -8,9 +8,9 @@ import TestimonialSection from "./components/TestimonialSection";
 import GallerySection from "./components/GallerySection";
 import QuoteSection from "./components/QuoteSection";
 import ServiceAreaSection from "./components/ServiceAreaSection";
-import ContactSection from "./components/ContactSection";
-import Footer from "../../../components/footer";
+import ContactSection from "./components/ContactSection"; 
 import Header from "../../../components/Header";
+import Footer from "../../../components/footer";
 
 export default function ServicesPage() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(
