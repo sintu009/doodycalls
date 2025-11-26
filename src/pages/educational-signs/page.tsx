@@ -8,7 +8,8 @@ import InstallationSection from "./components/InstallationSection";
 import EducationalSection from "./components/EducationalSection";
 import EnvironmentalSection from "./components/EnvironmentalSection";
 import ContactSection from "./components/ContactSection";
-import Footer from "./components/Footer";
+import Footer from "../../../components/footer";
+ 
 
 export default function EducationalSignsPage() {
   const [visibleSections, setVisibleSections] = useState<Set<string>>(
