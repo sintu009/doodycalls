@@ -7,6 +7,7 @@ import SmartDesign from "./components/SmartDesign";
 import TechnicalSpecs from "./components/TechnicalSpecs";
 import EnvironmentalPromise from "./components/EnvironmentalPromise";
 import CTASection from "./components/CTASection";
+ import Footer from "../../../components/footer";
  
 export default function ProductDetail() {
   const [isVisible, setIsVisible] = useState<{ [key: string]: boolean }>({});
@@ -44,6 +45,7 @@ export default function ProductDetail() {
         <EnvironmentalPromise isVisible={isVisible.environmental} />
         <CTASection isVisible={isVisible.cta} />
       </main>
+      <Footer />
       
     </div>
   );
