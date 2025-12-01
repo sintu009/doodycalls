@@ -172,14 +172,24 @@ export default function Header() {
                     Dog Waste Station Installation
                   </a>
                   <a
-                    href="/"
+                    href="/installation-services"
                     onClick={(e) => {
                       e.preventDefault();
-                      handleNavigation("/");
+                      handleNavigation("/installation-services");
                     }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
                     Repair ReInstallation
+                  </a>
+                  <a
+                    href="dog-station-services-1"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation("/dog-station-services-1");
+                    }}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    Dog-station-services-1
                   </a>
                 </div>
               </div>

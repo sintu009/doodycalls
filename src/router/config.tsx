@@ -20,6 +20,8 @@ import TrashCans from "../pages/trash-cans/page";
 
 import ConcreteInstallationPage from "../pages/concrete-installation/page";
 import DogWasteStationInstallationPage from "../pages/dog-waste-station-installation";
+import InstallationServicesPage from "../pages/installation-services";
+import DogStationServicesPages from "../pages/dog-station-services-1";
 const Blog = lazy(() => import("../pages/blog/page"));
 const BlogDetail = lazy(() => import("../pages/blog-detail/page"));
 
@@ -91,6 +93,14 @@ const routes: RouteObject[] = [
   {
     path: "/blog/:slug",
     element: <BlogDetail />,
+  },
+  {
+    path: "/installation-services",
+    element: <InstallationServicesPage />,
+  },
+  {
+    path: "/dog-station-services-1",
+    element: <DogStationServicesPages />,
   },
 ];
 
