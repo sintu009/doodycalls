@@ -1,24 +1,24 @@
 export default function WhyChooseSection() {
   const benefits = [
     {
-      icon: 'ri-time-line',
-      title: 'Durable Installation',
-      description: 'Concrete-secured stations that withstand years of use',
+      icon: "ri-time-line",
+      title: "Durable Installation",
+      description: "Concrete-secured stations that withstand years of use",
     },
     {
-      icon: 'ri-community-line',
-      title: 'All Community Sizes',
-      description: 'Perfect for small parks to large HOA communities',
+      icon: "ri-community-line",
+      title: "All Community Sizes",
+      description: "Perfect for small parks to large HOA communities",
     },
     {
-      icon: 'ri-team-line',
-      title: 'Friendly Team',
-      description: 'Experienced, knowledgeable crew you can trust',
+      icon: "ri-team-line",
+      title: "Friendly Team",
+      description: "Experienced, knowledgeable crew you can trust",
     },
     {
-      icon: 'ri-star-line',
-      title: 'Beautiful Properties',
-      description: 'Keeps your property clean and well-maintained',
+      icon: "ri-star-line",
+      title: "Beautiful Properties",
+      description: "Keeps your property clean and well-maintained",
     },
   ];
 
@@ -26,7 +26,7 @@ export default function WhyChooseSection() {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-[#2E5A51] mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-[#F28C28] mb-4">
             Why Choose DoodyCalls
           </h2>
           <p className="text-lg text-gray-600">
@@ -43,8 +43,12 @@ export default function WhyChooseSection() {
               <div className="w-14 h-14 bg-[#6DBE45] rounded-full flex items-center justify-center mb-6">
                 <i className={`${benefit.icon} text-2xl text-white`}></i>
               </div>
-              <h3 className="text-xl font-bold text-[#2E5A51] mb-3">{benefit.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{benefit.description}</p>
+              <h3 className="text-xl font-bold text-[#F28C28] mb-3">
+                {benefit.title}
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                {benefit.description}
+              </p>
             </div>
           ))}
         </div>
@@ -52,29 +56,34 @@ export default function WhyChooseSection() {
         <div className="mt-16 bg-white rounded-3xl p-12 shadow-lg">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="flex-1">
-              <h3 className="text-3xl font-bold text-[#2E5A51] mb-4">
+              <h3 className="text-3xl font-bold text-[#F28C28] mb-4">
                 Community Benefits
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                Cleaner sidewalks, happier residents, and a more welcoming community — that's the DoodyCalls promise. We take care of the dirty work so your property can shine.
+                Cleaner sidewalks, happier residents, and a more welcoming
+                community — that's the DoodyCalls promise. We take care of the
+                dirty work so your property can shine.
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start">
                   <i className="ri-check-line text-2xl text-[#6DBE45] mr-3 mt-1"></i>
                   <span className="text-gray-700">
-                    <strong>Happier Residents:</strong> Well-maintained spaces attract quality tenants and keep residents satisfied
+                    <strong>Happier Residents:</strong> Well-maintained spaces
+                    attract quality tenants and keep residents satisfied
                   </span>
                 </li>
                 <li className="flex items-start">
                   <i className="ri-check-line text-2xl text-[#6DBE45] mr-3 mt-1"></i>
                   <span className="text-gray-700">
-                    <strong>Cleaner Walkways:</strong> Strategically placed stations encourage responsible pet ownership
+                    <strong>Cleaner Walkways:</strong> Strategically placed
+                    stations encourage responsible pet ownership
                   </span>
                 </li>
                 <li className="flex items-start">
                   <i className="ri-check-line text-2xl text-[#6DBE45] mr-3 mt-1"></i>
                   <span className="text-gray-700">
-                    <strong>Welcoming Environment:</strong> Create a positive first impression for visitors and potential residents
+                    <strong>Welcoming Environment:</strong> Create a positive
+                    first impression for visitors and potential residents
                   </span>
                 </li>
               </ul>

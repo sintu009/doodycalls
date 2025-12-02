@@ -1,44 +1,72 @@
+export default function ContactSection() {
+  const services = [
+    {
+      icon: "ri-tools-line",
+      title: "Replacement of broken or leaning posts",
+      description: "Concrete re-setting to keep stations upright and secure",
+      bgColor: "bg-[#E8F5E9]",
+      iconColor: "text-[#F28C28]",
+    },
+    {
+      icon: "ri-refresh-line",
+      title: "Reinstallation or relocation",
+      description:
+        "Moving stations to better locations as your property evolves",
+      bgColor: "bg-[#E8F5E9]",
+      iconColor: "text-[#F28C28]",
+    },
+    {
+      icon: "ri-flashlight-line",
+      title: "Fast, professional service",
+      description: "Keeping your community looking its best without the wait",
+      bgColor: "bg-[#E8F5E9]",
+      iconColor: "text-[#F28C28]",
+    },
+    {
+      icon: "ri-hand-heart-line",
+      title: "Affordable maintenance",
+      description:
+        "Extending the life of your investment at a fraction of the cost",
+      bgColor: "bg-[#E8F5E9]",
+      iconColor: "text-[#F28C28]",
+    },
+  ];
 
-interface ContactSectionProps {
-  isVisible: boolean;
-}
-
-export default function ContactSection({ isVisible }: ContactSectionProps) {
   return (
-    <section 
-      id="contact" 
-      data-animate 
-      className="relative py-24 bg-gradient-to-br from-[#F6F6F6] via-white to-[#FDF8F3] overflow-hidden"
-    >
-      {/* Background decorative elements */}
-      <div className="absolute top-20 right-20 w-96 h-96 bg-[#2E5A51]/10 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 left-20 w-80 h-80 bg-[#F28C28]/10 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+    <section className="py-24 bg-gradient-to-b from-white to-gray-50">
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Our Repair & Reinstallation{" "}
+            <span className="text-[#F28C28]">Services</span>
+          </h2>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Our repair and reinstallation services keep your waste stations
+            functioning smoothly
+          </p>
+        </div>
 
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className={`text-center transform transition-all duration-1000 ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}>
-          <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-12 shadow-2xl border border-white/50 max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#2E5A51] mb-8">
-              Need <span className="text-[#F28C28]">Immediate Assistance?</span>
-            </h2>
-            
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              For immediate assistance, call <strong className="text-[#2E5A51] font-bold">919-634-5383</strong> or visit our website
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <a 
-                href="tel:919-634-5383"
-                className="bg-gradient-to-r from-[#F28C28] to-[#e07a1f] text-white px-10 py-5 rounded-2xl text-lg font-semibold hover:shadow-2xl hover:shadow-[#F28C28]/50 transform hover:scale-105 transition-all duration-300 whitespace-nowrap cursor-pointer"
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100"
+            >
+              <div
+                className={`w-16 h-16 ${service.bgColor} rounded-full flex items-center justify-center mb-6`}
               >
-                Call Now: 919-634-5383
-              </a>
-              <button className="border-2 border-[#2E5A51] text-[#2E5A51] px-10 py-5 rounded-2xl text-lg font-semibold hover:bg-[#2E5A51] hover:text-white transition-all duration-300 whitespace-nowrap cursor-pointer">
-                Visit Our Website
-              </button>
+                <i
+                  className={`${service.icon} text-3xl ${service.iconColor}`}
+                ></i>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-3 leading-snug">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {service.description}
+              </p>
             </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

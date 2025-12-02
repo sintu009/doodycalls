@@ -128,10 +128,10 @@ export default function Header() {
                 onMouseLeave={handleServicesMouseLeave}
               >
                 <a
-                  href="/services"
+                  href=""
                   onClick={(e) => {
                     e.preventDefault();
-                    handleNavigation("/services");
+                    handleNavigation("");
                   }}
                   className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer flex items-center space-x-2"
                   aria-expanded={servicesOpen}
@@ -152,6 +152,17 @@ export default function Header() {
                   }`}
                 >
                   <a
+                    href="/services"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation("/services");
+                    }}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    Dog Waste Station Service
+                  </a>
+
+                  <a
                     href="/concrete-installation"
                     onClick={(e) => {
                       e.preventDefault();
@@ -159,37 +170,27 @@ export default function Header() {
                     }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    Station & Trash Can Installation
+                    Station and Trash Can Installation
                   </a>
                   <a
-                    href="/dog-waste-station-installation"
+                    href="/dog-station-services"
                     onClick={(e) => {
                       e.preventDefault();
-                      handleNavigation("/dog-waste-station-installation");
+                      handleNavigation("/dog-station-services");
                     }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    Dog Waste Station Installation
+                    Station Repairs
                   </a>
                   <a
-                    href="/installation-services"
+                    href=" "
                     onClick={(e) => {
                       e.preventDefault();
-                      handleNavigation("/installation-services");
+                      handleNavigation("");
                     }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    Repair ReInstallation
-                  </a>
-                  <a
-                    href="dog-station-services-1"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      handleNavigation("/dog-station-services-1");
-                    }}
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
-                  >
-                    Dog-station-services-1
+                    Common Are Dog Waste Removal
                   </a>
                 </div>
               </div>
@@ -204,7 +205,7 @@ export default function Header() {
                   href="/products-overview"
                   onClick={(e) => {
                     e.preventDefault();
-                    handleNavigation("/products-overview");
+                    handleNavigation("");
                   }}
                   className="text-gray-700 hover:text-[#2E5A51] transition-colors cursor-pointer flex items-center space-x-2"
                   aria-expanded={productsOpen}
@@ -225,24 +226,35 @@ export default function Header() {
                   }`}
                 >
                   <a
-                    href="/educational-signs"
+                    href="/products-overview"
                     onClick={(e) => {
                       e.preventDefault();
-                      handleNavigation("/educational-signs");
+                      handleNavigation("/products-overview");
                     }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    Educational-signs
+                    Dog Waste Stations
                   </a>
+
                   <a
-                    href="/dog-waste-bags"
+                    href="/educational-signs"
                     onClick={(e) => {
                       e.preventDefault();
                       handleNavigation("/dog-waste-bags");
                     }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    Dog-waste-bags
+                    Dog Waste Bags
+                  </a>
+                  <a
+                    href="/dog-waste-bags"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      handleNavigation("/educational-signs");
+                    }}
+                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
+                  >
+                    Educational Dog Waste Signs
                   </a>
                   <a
                     href="/trash-cans"
@@ -252,40 +264,7 @@ export default function Header() {
                     }}
                     className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
                   >
-                    Trash-cans
-                  </a>
-                  <a
-                    href="/products-overview#masterchief"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setProductsOpen(false);
-                      handleNavigation("/products-overview#masterchief");
-                    }}
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
-                  >
-                    The Master Chief™
-                  </a>
-                  <a
-                    href="/products-overview#commander"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setProductsOpen(false);
-                      handleNavigation("/products-overview#commander");
-                    }}
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
-                  >
-                    The Commander™
-                  </a>
-                  <a
-                    href="/products-overview#admiral"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      setProductsOpen(false);
-                      handleNavigation("/products-overview#admiral");
-                    }}
-                    className="block px-4 py-2 text-gray-700 hover:bg-gray-50"
-                  >
-                    The Admiral™
+                    Trash Cans
                   </a>
                 </div>
               </div>
